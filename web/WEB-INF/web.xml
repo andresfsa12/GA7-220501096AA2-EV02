@@ -4,9 +4,17 @@
         <servlet-name>acudiente</servlet-name>
         <servlet-class>Servlet.acudiente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>registro_acudiente</servlet-name>
+        <servlet-class>Servlet.registro_acudiente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>acudiente</servlet-name>
         <url-pattern>/acudiente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registro_acudiente</servlet-name>
+        <url-pattern>/registro_acudiente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
