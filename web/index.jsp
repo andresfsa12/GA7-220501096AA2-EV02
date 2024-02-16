@@ -12,17 +12,21 @@
         <title>Acudiente</title>
     </head>
     <body>
-                <div> Ingreso Usuario</div>
+ <%
+    String mensaje = "INGRESO DE USUARIO";
+    out.println(mensaje);
+%>
         <form name="Ingreso" action="acudiente" method="get">
              <br> <br>
             Usuario: <input type="text" name="usuario" value=""/>
             <br> <br>
-            Contraseña<input type="password" name="clave" value=""/>
+            Contraseña: <input type="password" name="clave" value=""/>
              <br> <br>
              <button type="submit" value="enviar" action="acudiente">
                  INICIAR SESIÓN
              </button>
         </form>
+             <br>       
                 <button type="submit" value="registrar" action="registro_acudiente" method="get" onclick="location.href='registro_acudiente.jsp'">
                  REGISTRARSE
                 </button>
